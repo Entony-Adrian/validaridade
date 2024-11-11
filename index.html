@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="aviao.png" alt="imagem de avião">
+        <h1>Viagem Rápida</h1>
+        <h2>Seu site de viagem favorito</h2>
+        <h3>Faça seu cadastro aqui</h3>
+        <p>Digite seu email</p>
+        <input type="email" name="" id="email">
+        <p>Digite sua senha</p>
+        <input type="password" name="" id="senha">
+        <div class="acesso">
+            <p>Digite sua idade</p>
+            <input type="number" name="" id="idadeInput">
+            <button onclick="verificaridade()">Verificar</button>
+        </div>
+
+    </div>
+
+    <script>
+        // function verificaremail(){
+        //     const email = parseInt(document.getElementById("email").value)
+        // }
+        function verificaridade() {
+            const idade = parseInt(document.getElementById("idadeInput").value);
+
+            if (idade >= 18) {
+                window.location.href = "permitido.html";
+            } else {
+                window.location.href = "npermitido.html";
+            }
+
+        }
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
